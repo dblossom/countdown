@@ -19,6 +19,8 @@ function load(){
 * @param hour - the hour (24 hour time)
 */
 function countDown(year, month, day, hour){
+	
+	alert("changed");
 	// get todays date in milliseconds
 	var today = new Date().getTime();
 	
