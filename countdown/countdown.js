@@ -53,5 +53,8 @@ function countDown(year, month, day, hour){
 	//       Number(hour).toFixed(0) + " hours, " +
 	//       Number(min).toFixed(0) + " minutes, " +
 	//       Number(sec).toFixed(0) + " seconds";
-	return days;
+	return Math.floor(days) + " days, " +
+	       Math.floor(hour) + " hours, " +
+	       Math.floor(min) + " minutes, " +
+	       Math.floor(sec) + " seconds";
 }
