@@ -27,10 +27,10 @@ function countDown(year, month, day, hour){
 	var later = new Date(year, (month - 1), day, hour, 0).getTime();
 
 	// so we need to convert milliseconds to something that will be readable
-	var sec = Number(((later - today) / 1000)).toFixed(0); // 1000 milliseconds in second
-	var min = Number(sec / 60).toFixed(0); // 60 seconds in min
-	var hour = Number(min / 60).toFixed(0); // 60 minutes in hour
-	var days = Number(hour / 24).toFixed(1); // 24 hours in day
+	var sec = Number(((later - today) / 1000)); //.toFixed(0); // 1000 milliseconds in second
+	var min = Number(sec / 60); //.toFixed(0); // 60 seconds in min
+	var hour = Number(min / 60); //.toFixed(0); // 60 minutes in hour
+	var days = Number(hour / 24);//.toFixed(1); // 24 hours in day
 	
 	// mod them so we only see < the day, or < hour, or < min
 	// TODO: consider doing it in one step above, that could remove from readability.
@@ -49,9 +49,9 @@ function countDown(year, month, day, hour){
 	}
 	
 	// FINALLY return the damn result, as a string.
-	return Number(days).toFixed(0) + " days, " +
-	       Number(hour).toFixed(0) + " hours, " +
-	       Number(min).toFixed(0) + " minutes, " +
-	       Number(sec).toFixed(0) + " seconds";
-	
+	//return Number(days).toFixed(0) + " days, " +
+	//       Number(hour).toFixed(0) + " hours, " +
+	//       Number(min).toFixed(0) + " minutes, " +
+	//       Number(sec).toFixed(0) + " seconds";
+	return days;
 }
