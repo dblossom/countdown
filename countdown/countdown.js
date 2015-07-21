@@ -40,5 +40,5 @@ function countDown(year, month, day, hour){
 
 	return Math.floor(days) + " days, " +
 	       Math.floor(hour) + " hours, " +
-	       Math.floor(min) + " minutes, ";
+	       Math.floor(min) + " minutes!";
 }
