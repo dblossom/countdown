@@ -44,9 +44,9 @@ function countDown(year, month, day, hour){
 	// so we do this ugly fucking thing until we figure out why...
 	//TODO: at zero it flips to 60 I think ... ? so need a better
 	//      band-aid
-	if (sec < 30){
-		    min +=1;
-	}
+//	if (sec < 30){
+//		    min +=1;
+//	}
 	
 	// FINALLY return the damn result, as a string.
 	//return Number(days).toFixed(0) + " days, " +
