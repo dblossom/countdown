@@ -37,24 +37,8 @@ function countDown(year, month, day, hour){
 	sec %= 60;
 	min %= 60;
 	hour %= 24;
-	
-	// hack band-aid ...
-	// so for some reason we are off by 30 seconds
-	// IE: once 29 seconds hits the minutes decrease
-	// so we do this ugly fucking thing until we figure out why...
-	//TODO: at zero it flips to 60 I think ... ? so need a better
-	//      band-aid
-//	if (sec < 30){
-//		    min +=1;
-//	}
-	
-	// FINALLY return the damn result, as a string.
-	//return Number(days).toFixed(0) + " days, " +
-	//       Number(hour).toFixed(0) + " hours, " +
-	//       Number(min).toFixed(0) + " minutes, " +
-	//       Number(sec).toFixed(0) + " seconds";
+
 	return Math.floor(days) + " days, " +
 	       Math.floor(hour) + " hours, " +
-	       Math.floor(min) + " minutes, " +
-	       Math.floor(sec) + " seconds";
+	       Math.floor(min) + " minutes, ";
 }
