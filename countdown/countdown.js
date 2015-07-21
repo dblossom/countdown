@@ -21,7 +21,7 @@ function load(){
 function countDown(year, month, day, hour){
 	
 	// get todays date in milliseconds
-	var today = new Date().now();
+	var today = new Date().getTime();
 	
 	// get "later" date in milliseconds 
 	var later = new Date(year, (month - 1), day, hour, 0).getTime();
