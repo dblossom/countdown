@@ -29,7 +29,7 @@ function countDown(year, month, day, hour){
 	var sec = Number(((later - today) / 1000)).toFixed(0); // 1000 milliseconds in second
 	var min = Number(sec / 60).toFixed(0); // 60 seconds in min
 	var hour = Number(min / 60).toFixed(0); // 60 minutes in hour
-	var days = Number(hour / 24).toFixed(0); // 24 hours in day
+	var days = Number(hour / 24).toFixed(1); // 24 hours in day
 	
 	// mod them so we only see < the day, or < hour, or < min
 	// TODO: consider doing it in one step above, that could remove from readability.
