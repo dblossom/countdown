@@ -9,7 +9,7 @@ function load(){
 	
         context.clearRect(0,0,canvas.width, canvas.height);
         context.fillText("The time now is: ".concat(new Date().getTime()), 0, 25);
-	context.fillText(countDown(2015, 9, 19, 12), 25, 25);	
+	context.fillText(countDown(2015, 9, 19, 12), 0, 50);	
 }
 
 /**
