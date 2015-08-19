@@ -8,8 +8,8 @@ function load(){
 	context.font = "bold 20px Arial";
 	
         context.clearRect(0,0,canvas.width, canvas.height);
-        context.fillText("The time now is: " + (new Date().getTime()));
-	context.fillText("test" + countDown(2015, 9, 19, 12), 0, 25);	
+        context.fillText("The time now is: " + (new Date().getTime()), 0, 25);
+	context.fillText("test" + countDown(2015, 9, 19, 12), 25, 25);	
 }
 
 /**
