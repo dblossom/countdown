@@ -1,4 +1,3 @@
-
 /**
  * Simple function that loads the countdown() for the canvas.
  */
@@ -7,9 +6,8 @@ function load(){
 	var context = canvas.getContext('2d');
 	context.font = "bold 20px Arial";
 	
-        context.clearRect(0,0,canvas.width, canvas.height);
-        context.fillText("The date now is: ".concat(new Date().toDateString()), 0, 25);
-	context.fillText(countDown(2015, 9, 19, 12), 0, 50);	
+    context.clearRect(0,0,canvas.width, canvas.height);
+	context.fillText(countDown(2015, 9, 19, 12), 0, 25);	
 }
 
 /**
@@ -35,11 +33,13 @@ function countDown(year, month, day, hour){
 	
 	// mod them so we only see < the day, or < hour, or < min
 	// TODO: consider doing it in one step above, that could remove from readability.
+	
 	sec %= 60;
 	min %= 60;
-	hour %= 24;
+	
+	// commenting out because I want to not just have an hours / minutes countdown
+	// hours will need to be greater than 24...
+	// hour %= 24;
 
-	return Math.floor(days) + " days, " +
-	       Math.floor(hour) + " hours, " +
-	       Math.floor(min) + " minutes!";
+	return Math.floor(hour) + " hours, " + Math.floor(min) + " minutes!";
 }
