@@ -8,7 +8,7 @@ function load(){
 	context.font = "bold 20px Arial";
 	
     context.clearRect(0,0,canvas.width, canvas.height);
-	context.fillText(countDown(2018, 9, 15, 12), 0, 25);
+	context.fillText(countDown(2018, 9, 15, 12), 0, 30);
 }
 
 /**
