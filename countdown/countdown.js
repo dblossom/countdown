@@ -42,5 +42,5 @@ function countDown(year, month, day, hour){
 	// hours will need to be greater than 24...
 	hour %= 24;
 
-	return Math.floor(days) + "days, " + Math.floor(hour) + " hours, " + Math.floor(min) + " minutes, " + Math.floor(sec) + " seconds!";
+	return Math.floor(days) + " days, " + Math.floor(hour) + " hours, " + Math.floor(min) + " minutes, " + Math.floor(sec) + " seconds!";
 }
