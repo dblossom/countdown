@@ -2,13 +2,15 @@
 /**
  * Simple function that loads the countdown() for the canvas.
  */
-function load(){ 
+function load(year, month, day, hour){ 
 	var canvas = document.getElementById('canvas');
 	var context = canvas.getContext('2d');
 	context.font = "bold 20px Arial";
 	
     context.clearRect(0,0,canvas.width, canvas.height);
-	context.fillText(countDown(2018, 9, 15, 12), 0, 20);
+
+	context.fillText(countDown(year, month, day, hour), 0, 25);
+
 }
 
 /**
@@ -40,6 +42,11 @@ function countDown(year, month, day, hour){
 	
 	// commenting out because I want to not just have an hours / minutes countdown
 	// hours will need to be greater than 24...
+
+	// hour %= 24;
+
+	//return Math.floor(hour) + " hours, " + Math.floor(min) + " minutes, " + Math.floor(sec) + " seconds!";
+
 	hour %= 24;
 
 	return Math.floor(days) + " days, " + Math.floor(hour) + " hours, " + Math.floor(min) + " minutes, " + Math.floor(sec) + " seconds!";
